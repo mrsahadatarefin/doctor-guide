@@ -23,7 +23,7 @@ const DoctorsScheduleToday = () => {
    
     ]
     return (
-        <div className="mt-20 max-w-[1440px]   m-auto  ">
+        <div data-aos="zoom-in-left" className="mt-20 max-w-[1440px]   m-auto  ">
               <h1 className='text-4xl text-bold font-bold  pt-5'>Doctor’s Schedule Today</h1>
            <div className=' grid grid-cols-1 lg:grid-cols-2 gap-36 '>
            <div className='pt-10' >

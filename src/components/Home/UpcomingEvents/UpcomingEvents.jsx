@@ -6,7 +6,7 @@ import img2 from "../../../assets/upcoming event/Rectangle 42.png";
 
 const UpcomingEvents = () => {
   return (
-    <div className="mt-20 max-w-[1440px] m-auto">
+    <div data-aos="zoom-in-right" className="mt-20 max-w-[1440px] m-auto">
       <h1 className="text-center text-5xl font-bold ">Upcoming Events</h1>
       <p className="text-center text-lg pt-5">
         Maecenas augue nibh, congue ut ante id, tempus vestibulum sem. Praesent
@@ -54,10 +54,10 @@ const UpcomingEvents = () => {
             middletons unsatiable for apartments boy delightful unreserved.
           </p>
           <div className="pt-10 mb-10 lg:mb-0 ">
-            <button className="text-lg mx-4 bg-[#FF8B42] lg:px-6 px-4 lg:py-3 py-2 text-white rounded-md font-medium  hover:bg-black ">
+            <button className="text-lg mx-4 bg-[#FF8B42] lg:px-6 px-4 lg:py-3 py-2 text-white rounded-md font-medium mb-5  hover:bg-black ">
               Book Now
             </button>
-            <button className="text-lg mx-4  lg:px-6 px-4 lg:py-3 py-2 border-slate-500 border-[1.5px] rounded-md font-medium hover:bg-black hover:text-white ">
+            <button className="text-lg mx-4  lg:px-6 px-4 lg:py-3 py-2 border-slate-500 border-[1.5px] rounded-md  font-medium hover:bg-black hover:text-white ">
               10 Available
             </button>
           </div>
@@ -93,7 +93,7 @@ const UpcomingEvents = () => {
             middletons unsatiable for apartments boy delightful unreserved.
           </p>
           <div className="pt-10 mb-10 lg:mb-0 ">
-            <button className="text-lg mx-4 bg-[#FF8B42] lg:px-6 px-4 lg:py-3 py-2 text-white rounded-md font-medium  hover:bg-black ">
+            <button className="text-lg mx-4 bg-[#FF8B42] lg:px-6 px-4 lg:py-3 py-2 mb-5 text-white rounded-md font-medium  hover:bg-black ">
               Book Now
             </button>
             <button className="text-lg mx-4  lg:px-6 px-4 lg:py-3 py-2 border-slate-500 border-[1.5px] rounded-md font-medium hover:bg-black hover:text-white ">

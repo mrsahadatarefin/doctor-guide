@@ -1,20 +1,18 @@
-import img1 from '../../../assets/Our Experts/Rectangle 13.png'
+import img1 from '../../../assets/Our Experts/beautiful-young.avif'
 import img2 from '../../../assets/Our Experts/Rectangle 108.png'
 import img3 from '../../../assets/Our Experts/doctor-3.jpg'
-import Expert from './Expert';
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+ import icon from '../../../assets/icons/🦆 icon _bookmark_.png'
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 
 
-// import required modules
-import { FreeMode, Pagination } from "swiper";
 
 const OurExperts = () => {
+  
  const experts = [
     {
    img :img1,
@@ -37,38 +35,60 @@ const OurExperts = () => {
 ]
 
   return (
-    <div className="mt-20 max-w-[1440px] m-auto">
+    <div data-aos="zoom-in-right" className="mt-20 max-w-[1440px] m-auto">
       <h1 className="text-center text-4xl font-bold ">Our Medical Experts</h1>
       <p className="text-center text-lg pt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum <br />
-        augue quis augue ornare, eget faucibus felis pharetra. Lorem ipsum dolor
+        adipiscing elit. Donec fermentum 
+        augue quis augue ornare, eget <br /> faucibus felis pharetra. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit.
       </p>
       <p className="text-end text-xl font-medium mx-10">view all</p>
       <div className='gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-         {experts.map(expert =>    <>
+        
+      <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
-        freeMode={true}
+        centeredSlides={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-        {expert.name}
-        {expert.name}
-        {expert.name}
-        {expert.name}
-        {expert.name}
-        {expert.name}
-       </SwiperSlide>
-        
+        {
+           experts.map(im=><>
+            <SwiperSlide>
+              <div className=''>
+            <img className='mt-10 lg:h-[300px] h-[200px] lg:w-[400px] w-200px rounded-t-3xl  ' src={im.img} alt="" /></div>
+            <div className=' border-sky-300 rounded-b-xl border-[1.5px] px-5 pb-2'>
+          <div className='flex justify-between'>
+          <div>
+              <h1 className=' lg:text-xl text-md font-bold pt-5'>{im.name}</h1>
+               <h1 className='text-md font-light pt-2'>{im.title}</h1>
+             </div>
+             <div>
+              <img src={icon} alt="" className='pt-5'  />
+             </div>
+          </div>
+              <div className='lg:flex  flex-col justify-between pt-5'>
+             
+              <p className='lg:w-1/2 w-full'>{im.dis.slice(0,50)}.....</p>
+           
+             
+             <button className=' lg:w-full  hover:bg-[#0089BA] text-md font-medium  lg:px-5 px-0 py-1 mt-3 mb-3  rounded-md  text-white bg-[#FF8B42] text-sm'> Book now</button>
+            
+                </div> 
+               
+            </div>
+            
+            </SwiperSlide>
+           </>)
+        }
         
       </Swiper>
-    </>     )}
+    </>
+        
       </div>
     </div>
   );

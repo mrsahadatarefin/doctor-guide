@@ -47,7 +47,7 @@ const OurMedicalCare = () => {
     
     ]
   return (
-    <div className="mt-20 max-w-[1440px] m-auto">
+    <div data-aos="zoom-in-right" className="mt-20 max-w-[1440px] m-auto">
       <h1 className="text-center text-5xl font-bold ">Our Medical Care</h1>
       <p className="text-center text-xl  text-black pt-8 font-medium">Services We Provide</p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mt-16 '>

@@ -12,7 +12,7 @@ import { Navigation } from "swiper";
 
 const PatientFeedback = () => {
   return (
-    <div className="mt-20 max-w-[1440px] m-auto">
+    <div data-aos="zoom-in-left" className="mt-20 max-w-[1440px] m-auto">
       <>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
